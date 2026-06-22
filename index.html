@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FELICES 2 MESES❤️</title>
+<title>FELICES 2 MESES ❤️</title>
 
 <style>
 body{
@@ -31,6 +31,7 @@ p{
     font-size:1.4rem;
     max-width:600px;
 }
+
 .foto{
     width:95%;
     max-width:1200px;
@@ -39,7 +40,8 @@ p{
     margin:20px 0;
     box-shadow:0 4px 15px rgba(0,0,0,0.3);
 }
-    button{
+
+button{
     background:#ff4d6d;
     color:white;
     border:none;
@@ -56,37 +58,74 @@ button:hover{
 }
 </style>
 </head>
+
 <body>
 
-    <!-- Música -->
+<!-- Música -->
 <audio id="musica" loop>
     <source src="cancion.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
 </audio>
 
+<!-- Primera diapositiva -->
 <div class="slide">
-<img src="foto1.jpg" alt="Nuestra foto" class="foto">
+    <img src="foto1.jpg" alt="Nuestra foto" class="foto">
+
     <h1>🤍 PARA EL AMOR DE MI VIDA 🤍</h1>
-    <p>Definitivamente las manualidades no son mi fuerte, pero que de algo sirva el 80% que llevo de mi carrera jaja.</p>
+
+    <p>
+        Definitivamente las manualidades no son mi fuerte,
+        pero que de algo sirva el 80% que llevo de mi carrera jaja.
+    </p>
+
+    <button id="btnMusica" onclick="reproducirMusica()">
+        🎵 Antes de empezar, toca aquí 🤍
+    </button>
 </div>
 
+<!-- Segunda diapositiva -->
 <div class="slide">
-    <h1>🌹  GRACIAS POR ESTOS 2 MESES 🌹</h1>
-    <p>Tengo demasiado que agradecerte, mi amor. Gracias por todo el amor que me das, por cada sonrisa que me regalas y por todos esos gestos, detalles y palabras que me hacen confirmar, día tras día, lo mucho que quiero crecer y construir mi vida a tu lado.</p>
+    <h1>🌹 GRACIAS POR ESTOS 2 MESES 🌹</h1>
 
-<p>Por eso, hoy solo me queda darte las gracias por estos primeros dos meses juntos: los primeros dos de todos los que vamos a vivir, compartir y disfrutar hasta llegar a viejitos.🤍</p>
+    <p>
+        Tengo demasiado que agradecerte, mi amor. Gracias por todo el amor que me das,
+        por cada sonrisa que me regalas y por todos esos gestos, detalles y palabras
+        que me hacen confirmar, día tras día, lo mucho que quiero crecer y construir
+        mi vida a tu lado.
+    </p>
+
+    <p>
+        Por eso, hoy solo me queda darte las gracias por estos primeros dos meses juntos:
+        los primeros dos de todos los que vamos a vivir, compartir y disfrutar hasta
+        llegar a viejitos. 🤍
+    </p>
 </div>
 
+<!-- Tercera diapositiva -->
 <div class="slide">
-    <h1>🌹  VAMOS POR MUCHO MÁS 🌹</h1>
-    <p>Aunque tengamos malentendidos, cometamos errores, nos enojemos o enfrentemos cualquier dificultad que la vida nos ponga por delante, hay algo de lo que estoy completamente seguro: quiero vivirlo todo con vos.</p>
+    <h1>🌹 VAMOS POR MUCHO MÁS 🌹</h1>
 
-<p>No pienso rendirme ni ahora ni nunca, porque estoy convencido de que sos la mujer con la que quiero compartir el resto de mi vida. Quiero estar a tu lado en cada momento, construir nuestros sueños juntos y seguir eligiéndote cada día.🤍</p>
+    <p>
+        Aunque tengamos malentendidos, cometamos errores, nos enojemos o enfrentemos
+        cualquier dificultad que la vida nos ponga por delante, hay algo de lo que estoy
+        completamente seguro: quiero vivirlo todo con vos.
+    </p>
+
+    <p>
+        No pienso rendirme ni ahora ni nunca, porque estoy convencido de que sos la mujer
+        con la que quiero compartir el resto de mi vida. Quiero estar a tu lado en cada
+        momento, construir nuestros sueños juntos y seguir eligiéndote cada día. 🤍
+    </p>
 </div>
-    
-    <script>
+
+<script>
 function reproducirMusica() {
-    document.getElementById("musica").play();
+    const musica = document.getElementById("musica");
+    musica.play();
+
     document.getElementById("btnMusica").style.display = "none";
 }
+</script>
+
 </body>
 </html>
